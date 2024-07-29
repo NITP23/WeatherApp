@@ -12,7 +12,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: url("bgimage.jpg");
+  background: url("/weatherApp/weather_app/bgimage.jpg");
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -63,7 +63,7 @@ body {
   padding: 0 40px 0 42px;
   background: transparent;
 }
-.search_box ::placeholder{
+.search_box ::placeholder {
   backdrop-filter: blur(50px);
 }
 
@@ -84,7 +84,6 @@ body {
   padding: 0 40px 0 5px;
   cursor: pointer;
 }
-
 
 .weather_box {
   text-align: center;
@@ -124,9 +123,9 @@ body {
   transition: transform 1s ease;
 }
 
-.weather_box img{
+.weather_box img {
   padding: 20px;
-  width:60%;
+  width: 60%;
 }
 .weather_box .temperature {
   position: relative;
@@ -183,7 +182,7 @@ body {
   justify-content: flex-end;
 }
 .weather_details i {
-  font-size: 60px;
+  font-size: 50px;
   margin-right: 10px;
 }
 .weather_details .text {
@@ -230,7 +229,6 @@ body {
 #clone_info_wind {
   position: absolute;
   transform: translateY(-100%);
-  
 }
 
 #clone-info-weather .weather {
@@ -258,22 +256,31 @@ body {
   transform: translateY(50%);
 }
 
-@media (max-width:620px) {
-   .container{
-    width: 85%;
+@media (max-width: 620px) {
+  .container {
+    width: 90%;
     align-items: center;
-   }  
+  }
+  .search_box button {
+    width: 40px;
+  }
+  .search_box i {
+    width: 40px;
+  }
+  .weather_details {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    width: 100%;
+    padding: 0 0;
+    display: flex;
+  }
+  .weather_details .humidity {
+    overflow-wrap: hidden;
+    margin-left: 0;
+    margin-right: 10px;
+  }
+  .info_wind{
+    font-size: 8px;
+  }
 }
-/* @media (max-width:460px) {
-  .container{
-    width:85%;
-    align-items: center;
-  }
-  .humidity{
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  }
-  
-  
-} */
