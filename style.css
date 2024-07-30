@@ -34,7 +34,7 @@ nav i{
   left: 0;
 }
 nav i:hover{
-  -webkit-text-stroke: 0.2px #fff;
+  -webkit-text-stroke: 1px #fff;
   color: transparent;
 }
 nav ul li {
